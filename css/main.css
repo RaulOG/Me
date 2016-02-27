@@ -1,0 +1,629 @@
+/******************************************************************************************/
+/** COLOR PALETTE                                                                        **/
+/**                                                                                      **/
+/** Dark grey - #222                                                                     **/
+/** Light grey - #868686                                                                 **/
+/** Turquoise - #1fada3                                                                  **/
+/**                                                                                      **/
+/******************************************************************************************/
+
+/******************************************************************************************/
+/** ALL-SITE STYLES                                                                      **/
+/******************************************************************************************/
+
+/** Body **/
+body {
+    font-size: 100%;
+    background-color: #FFF;
+}
+
+/** SECTION - Every section has full width. **/
+.section {
+    position: relative;
+    width: 100%;
+}
+
+/** SECTION WRAPPER - Section wrappers have limited width in big screens and a margin in the others. **/
+.section .wrapper {
+    max-width: 64em;
+    margin: 0 auto;
+}
+
+/** ARTICLE WRAPPER - Article have a distance at top and at bottom. **/
+.section .wrapper {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+/******************************************************************************************/
+/** GENERAL STRUCTURE                                                                    **/
+/******************************************************************************************/
+
+/** Pseudo element before header for the extra space that does not cover the fixed nav **/
+body:before {
+    content: '';
+    display: block;
+    height: 3em;
+}
+
+/** Nav **/
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 3em;
+    z-index: 500;
+    background-color: #FFF;
+    box-shadow: 0 0 4px #868686;
+    line-height: 3em;
+}
+
+/** Header **/
+#mainHeader {
+    height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
+    background: url('../img/header_background.png') fixed;
+    background-position: 50% 30%;
+    background-size: cover;
+    text-align: center;
+}
+
+/** The Skills **/
+#articleTheSkills {
+    overflow: hidden;
+    background-color: #FFF;
+}
+
+/** The Person **/
+.articleThePerson {
+    background: fixed center;
+    background-size: cover;
+}
+
+/** The Works **/
+#articleTheWorks {
+    background-color: #FFF;
+}
+
+/** The Difference **/
+#articleTheDifference {
+    background: url('../img/theDifference_background.jpg') fixed;
+}
+
+/** Contact me! **/
+#mainFooter {
+    background-color: #222;
+    overflow: hidden;
+}
+
+#mainFooter .content {
+    text-align: center;
+}
+
+/******************************************************************************************/
+/** NAV                                                                                  **/
+/******************************************************************************************/
+
+#nav .wrapper {
+    position: relative;
+    margin: 0 auto;
+    max-width: 64em;
+    height: 100%;
+}
+
+#nav .button { /** Total content has 27px **/
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -15.5px;
+    width: 3em;
+    cursor: pointer;
+    padding-top: 5px;
+}
+
+#nav  .button > div {
+    display: block;
+    width: 22px;
+    height: 3px; /** x 3 = 9px **/
+    background-color: #1fada3;
+    margin: 0 auto 5px auto; /* x 3 = 15px **/
+}
+
+#nav  > div > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 1em;
+    height: 100%;
+}
+
+#nav  ul {
+    height: 100%;
+    float: right;
+}
+
+#nav  ul li {
+    height: 100%;
+    float: left;
+}
+
+#nav  ul a {
+    height: 100%;
+    padding: 0 .6em;
+    display: block;
+}
+
+/******************************************************************************************/
+/** HEADER                                                                               **/
+/******************************************************************************************/
+
+/*********************************************************/
+/** Header wrap centers vertically the text block.      **/
+/*********************************************************/
+header#mainHeader .wrapper{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header#mainHeader .wrapper .title {
+    display: none;
+}
+
+header#mainHeader:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: 0.25em;
+}
+
+header#mainHeader .wrapper h1{
+    padding: 0 0.5em;
+}
+
+/******************************************************************************************/
+/** THE SKILLS                                                                           **/
+/******************************************************************************************/
+
+#articleTheSkills .knowledge {
+    position: relative;
+    overflow: hidden;
+    padding: 1em 0;
+}
+
+#articleTheSkills .knowledge:not(:last-child):after {
+    content: "";
+    width: 50%;
+    height: 1px;
+    margin-top: 25px;
+    display: block;
+    position: absolute;
+    left: 25%;
+    z-index: 1;
+    box-shadow: 0 0 25px 1px #000000;
+}
+
+#articleTheSkills .knowledge ul {
+    list-style: square inside;
+}
+
+#articleTheSkills .knowledge .text {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: calc(80% - 5em);
+}
+
+#articleTheSkills .masterOfPHP .symbol {background-color: #222;}
+#articleTheSkills .masterOfSQL .symbol {background-color: #868686;}
+#articleTheSkills .masterOfCSS .symbol {background-color: #1fada3;}
+#articleTheSkills .masterOfJS  .symbol {background-color: #222;}
+
+#articleTheSkills .knowledge .symbol {
+    position: relative;
+    display: inline-block;
+    width: 20%;
+    margin: 2em;
+    padding-bottom: 20%;
+    vertical-align: middle;
+    background-image: url('../img/theSkills_hexagon.png');
+    background-size: 100%;
+}
+
+#articleTheSkills .knowledge .symbol .knowledgeName {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    margin-top: -18%;
+}
+
+/******************************************************************************************/
+/** THE PERSON                                                                           **/
+/******************************************************************************************/
+
+#articleThePerson1 { 
+    background-image: url('../img/Raul_computer.png');
+    color: #FFF;
+    background-position: 0% 50%;
+}
+#articleThePerson1:before {
+    background-color: rgba(0,0,0,0.35);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#articleThePerson2 {
+    background-image: url('../img/Raul_party.png');
+    color: #000;
+    background-position: 50% -20%;
+}
+
+#articleThePerson2:before {
+    background-color: rgba(255,255,255,0.2);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.articleThePerson {
+    min-height: 50%;
+}
+
+
+.articleThePerson .wrapper {
+    position: relative;
+}
+.articleThePerson .traits{
+    position: relative;
+    overflow: hidden;
+    margin: 3em 0;
+}
+
+.articleThePerson .content{
+    width: calc(100% - 1em);
+    padding: 0 .5em;
+    margin: 0 auto;
+}
+
+.articleThePerson .content p{
+    margin: 1em 0;
+}
+
+.articleThePerson .personalTrait {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+
+.articleThePerson .image {
+    position: relative;
+    display: block;
+    width: 30%;
+    background: center no-repeat #fff;
+    background-size: cover;
+    margin: 1em auto;
+    padding: 1em 1em calc(30% + 1em) 1em;
+    border-radius: 50em;
+    box-shadow: 0 0 1em 0 #222;
+}
+    
+.articleThePerson .image#personalTraitHappiness {
+    background-image: url('../img/thePerson_happiness.png');
+}
+
+.articleThePerson .image#personalTraitTraveller {
+    background-image: url('../img/thePerson_traveller.png');
+}
+
+.articleThePerson .image#personalTraitDancing {
+    background-image: url('../img/thePerson_dancing.png');
+}
+
+.articleThePerson .image#personalTraitAttentionToDetails {
+    background-image: url('../img/thePerson_attentionToDetails.png');
+}
+
+.articleThePerson .image#personalTraitPuzzleSolver {
+    background-image: url('../img/thePerson_puzzleSolver.png');
+}
+
+.articleThePerson .image#personalTraitQuickLearner {
+    background-image: url('../img/thePerson_quickLearner.png');
+}
+
+
+/******************************************************************************************/
+/** THE DIFFERENCE                                                                       **/
+/******************************************************************************************/
+
+#articleTheDifference .content {
+    width: calc(100% - 1em);
+    overflow: hidden;
+    padding: 0 0.5em;
+}
+
+article#articleTheDifference header {
+    line-height: 3em;
+    text-align: center;
+    margin-bottom: 2.5em;
+}
+
+article#articleTheDifference .iconWrapper {
+    background-color: #000;
+    width: 8em;
+    height: 8em;
+    border-radius: 50em;
+    text-align: center;
+    margin: .5em auto;
+    box-shadow: 0 0 1em 0 #222;
+}
+
+article#articleTheDifference .image {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+} 
+
+article#articleTheDifference #theDifference_enthusiast .image { background-image: url('../img/theDifference_enthusiast.png'); }
+article#articleTheDifference #theDifference_adventurer .image { background-image: url('../img/theDifference_adventurer.png'); }
+article#articleTheDifference #theDifference_proactive .image { background-image: url('../img/theDifference_proactive.png'); }
+
+article#articleTheDifference .ftype_subSectionContent {
+    padding: 0 1em;
+    text-align: center;
+}
+
+/******************************************************************************************/
+/** CONTACT ME                                                                           **/
+/******************************************************************************************/
+
+/** Contact inputs **/
+
+#mainFooter .wrapper {
+    overflow: hidden;
+}
+
+#mainFooter .col2of4:first-child {
+    margin-bottom: 2em;
+}
+#mainFooter .icon {
+    background: center no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    vertical-align: middle;
+    margin: 1em 1em 1em 0;
+}
+
+#mainFooter .icon.phone{ background-image: url('../img/contact_phone.png'); }
+#mainFooter .icon.mail { background-image: url('../img/contact_mail.png'); }
+#mainFooter .icon.download { background-image: url('../img/contact_download.png'); }
+
+/******************************************************************************************/
+/** NAVIGATION PANEL                                                                     **/
+/******************************************************************************************/
+
+#webNavPanel {
+    position: fixed;
+    top: 3em;
+    right: 0;
+    z-index: 501; /** Over nav **/
+    display: none;
+    border-left: 1px solid #ddd;
+}
+#webNavPanel ul {
+    position: relative;
+    z-index: 501;
+    background-color: #fff;
+    overflow: hidden;
+    
+}
+
+#webNavPanel ul li {
+    background-color: #fff;
+    margin-bottom: 1px;
+    display: block;
+    text-align: center;
+}
+
+#webNavPanel ul li:after {
+    content: "";
+    width: 75%;
+    height: 1px;
+    margin: -1px auto 0 auto;
+    display: block;
+    position: relative;
+    z-index: -1;
+    box-shadow: 0 0 25px 1px #000000;
+}
+
+#webNavPanel ul li a {
+    display: block;
+    line-height: 3em;
+    padding: 0 1em;
+}
+
+
+/******************************************************************************************/
+/** OTHER STYLES                                                                         **/
+/******************************************************************************************/
+
+/** Selected stuff **/
+::selection {
+    background-color: #1fada3;
+}
+
+.hiddenIfUnscrolled {
+    visibility: hidden;
+}
+
+.scrolledElement {
+    animation-name: scrolledElement;
+    -webkit-animation-name: scrolledElement;
+
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+
+    animation-timing-function: ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+
+    visibility: visible !important;
+}
+
+@keyframes scrolledElement {
+    0% {
+        opacity: 0;
+        margin-left: -1em;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+@-webkit-keyframes scrolledElement {
+    0% {
+        opacity: 0;
+        margin-left: -1em;
+    }
+
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+
+/******************************************************************************************/
+/** FONT STYLES                                                                          **/
+/******************************************************************************************/
+
+.ftype_navTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    font-size: 1.8em;
+    color:#1fada3;
+    text-decoration: none;
+}
+
+.ftype_navLink {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #222;
+    transition: background 1s;
+    text-decoration: none;
+}
+
+.ftype_navLink:hover {
+    background-color: rgba(31, 173, 163, 0.6);
+}
+
+.ftype_mainTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    line-height: 2em;
+    font-size: 4em;
+}
+
+.ftype_mainSubtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
+    line-height: 2em;
+    font-size: 2.5em;
+}
+
+.ftype_sectionTitle {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 2em;
+    text-align: center;
+}
+
+.ftype_sectionContent {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+
+.ftype_subSectionTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    line-height: 2em;
+    text-align: center;
+    letter-spacing: .8px;
+    color: #fff;
+}
+
+.ftype_subSectionContent {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 1.1em;
+    letter-spacing: 0.5px;
+    color: #fff;
+    font-style: italic;
+}
+
+.ftype_traitTitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.5em;
+}
+
+.ftype_traitContent {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    line-height: 1.2em;
+    font-size: 1.2em;
+    font-style: italic;
+}
+
+.ftype_svg {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    fill: #fff;
+    text-anchor: middle;
+}
+
+.ftype_input {
+    font-family: 'Lato', Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.5em;    
+}
+
+.ftype_sectionTitleDark {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 2em;
+    line-height: 2em;
+    text-align: center;
+    color: #fff;
+}
+
+.ftype_sectionContentDark {
+    font-family: 'Lato', sans-serif;
+    font-size: 1em;
+    line-height: 1em;
+    color: #fff;
+}
+.ftype_userMessage {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+    color: #1fada3;
+}

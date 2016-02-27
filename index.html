@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Raul, Web Developer expert in PHP, SQL, JS and CSS.</title>
+
+    <!-- Meta tags -->
+    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+    <meta name='description' content='I am Raul, an international web developer. Welcome to my personal website.'>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/mediaQueries.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/letterFx.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic|Raleway:400,300,600,700,800'
+          rel='stylesheet' type='text/css'>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/icon">
+    <link rel="icon" href="img/favicon.ico" type="image/icon">
+</head>
+<body>
+
+<!--
+    The navigation panel.
+    In the navigation panel are the "title" of the site at left and a button at right for phones and iPads and links to site's sections for bigger screens
+-->
+<nav id='nav'>
+    <div class='wrapper'>
+        <a title='Raul home' class='ftype_navTitle' href='#nav'>Raul</a>
+
+        <div class='button'>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <ul>
+            <li>
+                <a title='what I know' class='ftype_navLink' href='#articleTheSkills'>what I know</a>
+            </li>
+            <li>
+                <a title='The Person' class='ftype_navLink' href='#articleThePerson1'>who am I</a>
+            </li>
+            <li>
+                <a title='The Difference' class='ftype_navLink' href='#articleTheDifference'>why me</a>
+            </li>
+            <li>
+                <a title='Contact me' class='ftype_navLink' href='#mainFooter'>contact!</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!--
+    The header.
+    Or how to present myself as awesome as possible right after site opens.
+-->
+<header class='section' id='mainHeader'>
+    <div class='wrapper'>
+        <div>
+            <h2 class='title ftype_mainSubtitle'>
+                I am Raul
+            </h2>
+        </div>
+        <div>
+            <h1 class='title ftype_mainTitle'>
+                Code loves me
+            </h1>
+        </div>
+        <div>
+            <h2 class='title ftype_mainSubtitle'>
+                Specially PHP, SQL, JS and CSS.
+            </h2>
+        </div>
+    </div>
+</header>
+
+<!--
+    The articles
+    Here the page content.
+-->
+
+<article class='section' id='articleTheSkills'>
+    <div class='wrapper'>
+        <header>
+            <h2 class='ftype_sectionTitle'>
+                what I know
+            </h2>
+        </header>
+
+        <div class='knowledge masterOfPHP'>
+            <div class='symbol'>
+                <div class='knowledgeName'>
+                    <svg width="100%" height="35%" viewBox="-1 0 1 15">
+                        <text class='ftype_svg' x="0" y="13">PHP</text>
+                    </svg>
+                </div>
+            </div>
+            <div class='text hiddenIfUnscrolled ftype_sectionContent'>
+                <ul>
+                    <li>
+                        Laravel, Kohana, Yii, Zend frameworks.
+                    </li>
+                    <li>
+                        Design patterns such as MVC, Factory and DIContainer
+                    </li>
+                    <li>
+                       API integration
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='knowledge masterOfSQL'>
+            <div class='symbol'>
+                <div class='knowledgeName'>
+                    <svg width="100%" height="35%" viewBox="-1 0 1 15">
+                        <text class='ftype_svg' x="0" y="13">SQL</text>
+                    </svg>
+                </div>
+            </div>
+            <div class='text hiddenIfUnscrolled ftype_sectionContent'>
+                <ul>
+                    <li>
+                        Complex queries: different join types and sub-queries.
+                    </li>
+                    <li>
+                        Relational database design.
+                    </li>
+                    <li>
+                        SQL statements optimization
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='knowledge masterOfCSS'>
+            <div class='symbol'>
+                <div class='knowledgeName'>
+                    <svg width="100%" height="35%" viewBox="0 0 1 15">
+                        <text class='ftype_svg' x="0" y="13">CSS</text>
+                    </svg>
+                </div>
+            </div>
+            <div class='text hiddenIfUnscrolled ftype_sectionContent'>
+                <ul>
+                    <li>
+                        Web Responsive design and mobile first
+                    </li>
+                    <li>
+                        Sass, Scss and Less language interpreters
+                    </li>
+                    <li>
+                        Scalable vector graphics modified by css & js
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class='knowledge masterOfJS'>
+            <div class='symbol'>
+                <div class='knowledgeName'>
+                    <svg width="100%" height="35%" viewBox="0 0 1 15">
+                        <text class='ftype_svg' x="0" y="13">JS</text>
+                    </svg>
+                </div>
+            </div>
+            <div class='text hiddenIfUnscrolled ftype_sectionContent'>
+                <ul>
+                    <li>
+                        JQuery and CoffeeScript
+                    </li>
+                    <li>
+                        Experience with Ajax and push technology
+                    </li>
+                    <li>
+                        Object Oriented
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</article>
+
+<article class='section articleThePerson' id='articleThePerson1'>
+    <div class='wrapper spacer'>
+        <header>
+            <h2 class='ftype_sectionTitle'>
+                professional traits
+            </h2>
+        </header>
+        <div class='traits'>
+            <div class='personalTrait col col1of3'>
+                <div class='image' id='personalTraitPuzzleSolver'></div>
+                <div class='ftype_traitTitle'>Puzzle Solver</div>
+                <div class='ftype_traitContent'>Impossible is nothing</div>
+            </div>
+            <div class='personalTrait col col1of3'>
+                <div class='image' id='personalTraitQuickLearner'></div>
+                <div class='ftype_traitTitle'>Quick learner</div>
+                <div class='ftype_traitContent'>"What we learn with pleasure we never forget"</div>
+            </div>
+            <div class='personalTrait col col1of3'>
+                <div class='image' id='personalTraitAttentionToDetails'></div>
+                <div class='ftype_traitTitle'>Attention to details</div>
+                <div class='ftype_traitContent'>In the little things lays perfection</div>
+            </div>
+        </div>
+    </div>
+</article>
+<article class='section articleThePerson' id='articleThePerson2'>
+    <div class='wrapper spacer'>
+        <header>
+            <h2 class='ftype_sectionTitle'>
+                personal traits
+            </h2>
+        </header>
+        <div class='traits'>
+            <div class='personalTrait col col1of3'>
+                <div class='image' id='personalTraitHappiness'></div>
+                <div class='ftype_traitTitle'>I love happiness</div>
+                <div class='ftype_traitContent'>I am an expert in being happy!</div>
+            </div>
+            <div class='personalTrait col col1of3'>
+                <div class='image' id='personalTraitTraveller'></div>
+                <div class='ftype_traitTitle'>Traveller</div>
+                <div class='ftype_traitContent'>Best way to open your mind</div>
+            </div>
+            <div class='personalTrait col col1of3'>
+                <div class='image' id='personalTraitDancing'></div>
+                <div class='ftype_traitTitle'>Dance</div>
+                <div class='ftype_traitContent'>I put my soul into it</div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<article class='section' id='articleTheDifference'>
+    <div class='wrapper'>
+        <header>
+            <h2 class='ftype_sectionTitleDark'>
+                why me
+            </h2>
+        </header>
+
+        <div class='content spacer'>
+            <div class='block block4' id='theDifference_enthusiast'>
+                <div class='iconWrapper'>
+                    <div class='image'></div>
+                </div>
+
+                <div class='text'>
+                    <div class='ftype_subSectionTitle'>
+                        Enthusiast
+                    </div>
+                    <div class='ftype_subSectionContent'>
+                        <p>
+                            I do love my job!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='block block4' id='theDifference_adventurer'>
+                <div class='iconWrapper'>
+                    <div class='image'></div>
+                </div>
+
+                <div class='text'>
+                    <div class='ftype_subSectionTitle'>
+                        Adventurer
+                    </div>
+                    <div class='ftype_subSectionContent'>
+                        <p>
+                            Easy is boring!
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class='block block4' id='theDifference_proactive'>
+                <div class='iconWrapper'>
+                    <div class='image'></div>
+                </div>
+
+                <div class='text'>
+                    <div class='ftype_subSectionTitle'>
+                        Proactive
+                    </div>
+                    <div class='ftype_subSectionContent'>
+                        <p>
+                            Rather than reactive!
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<footer class='section' id='mainFooter'>
+    <div class='wrapper'>
+        <header>
+            <h2 class='ftype_sectionTitleDark'>
+                contact me
+            </h2>
+        </header>
+
+        <div class='content spacer'>
+            <div>
+                <p class='ftype_sectionContentDark'><span class='icon phone'></span> (+31) 638 617 308</p>
+
+                <p class='ftype_sectionContentDark'><span class='icon mail'></span> raulog1989@gmail.com</p>
+
+                <p>
+                    <a class='ftype_sectionContentDark' title='Download my resume'
+                       href="docs/CVRaulOG-developer.pdf">
+                        <span class='icon download'></span>download my resume
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Web navigation panel - For little screens only -->
+
+<div class='section' id='webNavPanel'>
+    <ul>
+        <li>
+            <a title='what I know' class='ftype_navLink' href='#articleTheSkills'>what I know</a>
+        </li>
+        <li>
+            <a title='The Person' class='ftype_navLink' href='#articleThePerson1'>who am I</a>
+        </li>
+        <li>
+            <a title='The Difference' class='ftype_navLink' href='#articleTheDifference'>why me</a>
+        </li>
+        <li>
+            <a title='Contact me' class='ftype_navLink' href='#mainFooter'>contact!</a>
+        </li>
+    </ul>
+</div>
+
+<!-- JS Libraries -->
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/awesomeRaulWebsite.js"></script>
+<script type="text/javascript" src="js/letterFx.js"></script>
+
+</body>
+</html>
