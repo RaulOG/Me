@@ -61,7 +61,7 @@ body:before {
 /** Header **/
 #mainHeader {
     height: calc(100% - 3em); /** Occupy full height, deducting the size of the navigation to avoid header outside full screen on load **/
-    background: url('../img/header_background.png') fixed;
+    background: url('../img/raul_bridge.png') fixed;
     background-position: 50% 30%;
     background-size: cover;
     text-align: center;
@@ -244,7 +244,7 @@ header#mainHeader .wrapper h1{
 /******************************************************************************************/
 
 #articleThePerson1 { 
-    background-image: url('../img/Raul_computer.png');
+    background-image: url('../img/raul_computer.png');
     color: #FFF;
     background-position: 0% 50%;
 }
@@ -259,7 +259,7 @@ header#mainHeader .wrapper h1{
 }
 
 #articleThePerson2 {
-    background-image: url('../img/Raul_party.png');
+    background-image: url('../img/raul_party.png');
     color: #000;
     background-position: 50% -20%;
 }
